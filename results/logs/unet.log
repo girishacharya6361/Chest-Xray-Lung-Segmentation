@@ -1,0 +1,35 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\Admin\Downloads\Chest_Xray_Project_Completed (76)\Chest_Xray_Project\training\train_unet.py", line 16, in <module>
+    train_unet(m, t, a.name or "unet")
+  File "C:\Users\Admin\Downloads\Chest_Xray_Project_Completed (76)\Chest_Xray_Project\training\train_unet.py", line 7, in train_unet
+    return run_training(model_cfg, train_cfg, name, save_ckpt, log)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\Downloads\Chest_Xray_Project_Completed (76)\Chest_Xray_Project\training\trainer.py", line 80, in run_training
+    loss.backward()
+  File "C:\Users\Admin\Downloads\Chest_Xray_Project_Completed (76)\Chest_Xray_Project\venv\Lib\site-packages\torch\_tensor.py", line 623, in backward
+    torch.autograd.backward(
+  File "C:\Users\Admin\Downloads\Chest_Xray_Project_Completed (76)\Chest_Xray_Project\venv\Lib\site-packages\torch\autograd\__init__.py", line 395, in backward
+    _engine_run_backward(
+  File "C:\Users\Admin\Downloads\Chest_Xray_Project_Completed (76)\Chest_Xray_Project\venv\Lib\site-packages\torch\autograd\graph.py", line 1113, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[unet] device=cpu params=7,762,465 train=97 val=21
+[unet] epoch   1/60 train_loss=0.5496 val_loss=0.6556 val_dice=0.5273 val_iou=0.3659 best=0.5273
+[unet] epoch   2/60 train_loss=0.3883 val_loss=0.6886 val_dice=0.0000 val_iou=0.0000 best=0.5273
+[unet] epoch   3/60 train_loss=0.3429 val_loss=0.4314 val_dice=0.8017 val_iou=0.6721 best=0.8017
+[unet] epoch   4/60 train_loss=0.3120 val_loss=0.3357 val_dice=0.9005 val_iou=0.8213 best=0.9005
+[unet] epoch   5/60 train_loss=0.2897 val_loss=0.3137 val_dice=0.9133 val_iou=0.8428 best=0.9133
+[unet] epoch   6/60 train_loss=0.2683 val_loss=0.2762 val_dice=0.9336 val_iou=0.8775 best=0.9336
+[unet] epoch   7/60 train_loss=0.2473 val_loss=0.2651 val_dice=0.9187 val_iou=0.8506 best=0.9336
+[unet] epoch   8/60 train_loss=0.2272 val_loss=0.2294 val_dice=0.9499 val_iou=0.9061 best=0.9499
+[unet] epoch   9/60 train_loss=0.2112 val_loss=0.2250 val_dice=0.9490 val_iou=0.9050 best=0.9499
+[unet] epoch  10/60 train_loss=0.1944 val_loss=0.1918 val_dice=0.9532 val_iou=0.9118 best=0.9532
+[unet] epoch  11/60 train_loss=0.1765 val_loss=0.1817 val_dice=0.9509 val_iou=0.9074 best=0.9532
+[unet] epoch  12/60 train_loss=0.1697 val_loss=0.2131 val_dice=0.9091 val_iou=0.8376 best=0.9532
+[unet] epoch  13/60 train_loss=0.1848 val_loss=0.1752 val_dice=0.9260 val_iou=0.8633 best=0.9532
+[unet] epoch  14/60 train_loss=0.1538 val_loss=0.1565 val_dice=0.9480 val_iou=0.9021 best=0.9532
+[unet] epoch  15/60 train_loss=0.1380 val_loss=0.1562 val_dice=0.9502 val_iou=0.9058 best=0.9532
+[unet] epoch  16/60 train_loss=0.1340 val_loss=0.1380 val_dice=0.9493 val_iou=0.9049 best=0.9532

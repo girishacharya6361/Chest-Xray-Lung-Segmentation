@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+dataset/
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+results/cache/

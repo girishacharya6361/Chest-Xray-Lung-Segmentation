@@ -1,0 +1,12 @@
+{
+ "split": "test",
+ "n_images": 20,
+ "eval_size": 256,
+ "traditional_params": {
+  "clip": 2.0,
+  "tile": 8,
+  "cutoff": 0.3,
+  "ftype": "lowpass"
+ },
+ "created": "2026-11-23 12:26:07"
+}
